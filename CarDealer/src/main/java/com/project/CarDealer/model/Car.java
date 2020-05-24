@@ -1,5 +1,6 @@
-package model;
+package com.project.CarDealer.model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import javax.persistence.Column;
@@ -28,6 +29,8 @@ public class Car {
 	private float carPrice;
 	@Column(name="car_case")
 	private ArrayList<String> carCase ;
+	@Column(name="car_date")
+	private LocalDate carDate ;
 	
 	@JoinColumn(name="Dealer")
 	private Dealer dealerId ;

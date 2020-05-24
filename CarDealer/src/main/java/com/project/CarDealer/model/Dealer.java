@@ -1,4 +1,4 @@
-package model;
+package com.project.CarDealer.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
