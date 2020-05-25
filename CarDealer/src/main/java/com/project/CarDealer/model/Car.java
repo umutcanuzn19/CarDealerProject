@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -31,7 +32,7 @@ public class Car {
 	private ArrayList<String> carCase ;
 	@Column(name="car_date")
 	private LocalDate carDate ;
-	
+	@ManyToOne
 	@JoinColumn(name="Dealer")
 	private Dealer dealerId ;
 	
